@@ -28,14 +28,22 @@
                visibility: visible;
           }
 
-          @media (min-width: 768px) {
+          @media (max-width: 768px) {
                .astonish {
                     visibility: hidden;
                }
 
                .animated {
                     visibility: visible;
+
                }
+               .card-container{
+                    flex-direction: column;
+               }
+               .card{
+                    max-width: fit-content;
+               }
+
           }
      </style>
 </head>
@@ -112,6 +120,7 @@
                gap: 50px;
                justify-content: center;
                margin: 50px;
+               margin-top: -150px;
           }
 
           .card {
@@ -123,7 +132,6 @@
                width: 500px;
                transition: width 0.4s ease, box-shadow 0.3s ease;
                cursor: pointer;
-               margin-top: -150px;
           }
 
           .card:hover {
