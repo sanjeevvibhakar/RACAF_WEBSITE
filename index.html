@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+     <title>One Page Responsive CityScapes Template</title>
+
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+
+     <link href="css/styles.css" rel="stylesheet">
+
+     <style>
+          .astonish {
+               visibility: visible;
+          }
+
+          @media (min-width: 768px) {
+               .astonish {
+                    visibility: hidden;
+               }
+
+               .animated {
+                    visibility: visible;
+               }
+          }
+     </style>
+</head>
+
+<body>
+
+     <nav class="main-nav" id="main-nav">
+          <div class="content-wrapper-sm">
+               <a href="#" class="navbar-brand">RACAF 2K24</a>
+               <div id="menu-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+               </div>
+               <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reserve">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+               </ul>
+          </div>
+     </nav>
+
+
+     <header>
+
+          <img class="img-absolute" src="img/image.jpg" alt="City 1">
+          <div class="wrapper astonish animated fadeInDown">
+               <h1><strong>RACAF</strong>2K24</h1>
+               <h2 style="font-weight: 900; font-size:xx-large;">EVENTS</h2>
+          </div>
+     </header>
+
+
+     <div class="card-container">
+          <div class="card">
+               <img src="/img/block.jpg" alt="Block Events" class="card-image">
+               <div class="card-content">
+                   <h3>Block Events</h3>
+                   <p class="short-description">Discover exciting events happening in your block...</p>
+                   <div class="card-details">
+                       <p>Join us for a variety of engaging activities, from social gatherings to sports events. Click or hover for more details and stay updated on everything happening around you!</p>
+                   </div>
+               </div>
+           </div>
+           
+
+           <div class="card">
+               <img src="/img/indi.jpg" alt="Individual Games" class="card-image">
+               <div class="card-content">
+                   <h3>Individual Games</h3>
+                   <p class="short-description">Compete in thrilling solo challenges...</p>
+                   <div class="card-details">
+                       <p>Test your skills in a variety of individual games, where it's all about personal performance. From strategy to speed, find your perfect match. Hover or click for more details!</p>
+                   </div>
+               </div>
+           </div>
+           
+
+           <div class="card">
+               <img src="/img/gamezone.jpg" alt="Games Zone Events" class="card-image">
+               <div class="card-content">
+                   <h3>Games Zone Events</h3>
+                   <p class="short-description">Step into the ultimate gaming experience...</p>
+                   <div class="card-details">
+                       <p>Dive into a world of excitement at the Games Zone! Whether you're a casual player or a serious competitor, enjoy a variety of games that will keep you on the edge of your seat. Hover or click for more information!</p>
+                   </div>
+               </div>
+           </div>
+           
+     </div>
+     <style>
+          .card-container {
+               display: flex;
+               gap: 50px;
+               justify-content: center;
+               margin: 50px;
+          }
+
+          .card {
+               display: flex;
+               background-color: #000000c4;
+               border-radius: 10px;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+               overflow: hidden;
+               width: 500px;
+               transition: width 0.4s ease, box-shadow 0.3s ease;
+               cursor: pointer;
+               margin-top: -150px;
+          }
+
+          .card:hover {
+               width: 600px;
+               box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          }
+
+          .card-image {
+               width: 150px;
+               height: auto;
+               object-fit: cover;
+          }
+
+          .card-content {
+               padding: 20px;
+               flex-grow: 1;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+          }
+
+          .short-description {
+               margin-bottom: 10px;
+          }
+
+          .card-details {
+               max-height: 0;
+               opacity: 0;
+               overflow: hidden;
+               transition: max-height 0.4s ease, opacity 0.4s ease;
+          }
+
+          .card:hover .card-details {
+               max-height: 150px;
+               opacity: 1;
+          }
+     </style>
+
+     <footer>
+          <div class="content-wrapper-sm display-flex-between">
+
+               <small>Your copyright 2017.</small>
+
+
+               <div class="social-links">
+                    <ul>
+                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                         <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+               </div>
+          </div>
+     </footer>
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+     <script src="js/menu.js" charset="utf-8"></script>
+
+
+
+     <script src="js/astonish.js" charset="utf-8"></script>
+     <script src="js/nav.js" charset="utf-8"></script>
+     <script src="js/scroll.js" charset="utf-8"></script>
+</body>
+
+</html>
